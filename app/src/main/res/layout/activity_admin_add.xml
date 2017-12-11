@@ -1,0 +1,123 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/someColor"
+    tools:context="com.uonagent.mathlibrary.AdminAddActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextAddTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Название"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editTextAddAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Автор"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/editTextAddISBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:hint="ISBN"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="134dp" />
+
+        <EditText
+            android:id="@+id/editTextAddLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:hint="Ссылка"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <EditText
+            android:id="@+id/editTextAddQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Количество"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginBottom="9dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/buttonCover"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_weight="0"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/add_book" />
+
+            <Button
+                android:id="@+id/buttonNewBook"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Добавить"
+                android:textColor="@color/someColor"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
